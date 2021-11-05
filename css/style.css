@@ -1,0 +1,185 @@
+*,ul{
+    padding:0;
+    margin:0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.w-full{
+    width: 100%;
+}
+.container{
+    max-width: 1170px;
+}
+/*Header CSS start*/
+header{
+    border-top: 5px solid #6700ff;
+    padding:15px 0;
+    /* background: #f5f5f5; */
+    display: block;
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.7s ease-in-out;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header.active{
+    background: #f5f5f5;
+    padding: 5px 0;
+}
+nav ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 15px;
+}
+header ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 18px;
+}
+header.active ul li a{
+    color: #3c3d49;
+}
+header ul li a::after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px #6700ff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+header ul li a:hover:after { transform: scaleX(1); }
+/*Header CSS End*/
+/*Homepage start*/
+.carousel-dark .carousel-caption{
+    top:50%;
+    bottom: auto;
+    transform: translate(0, -50%);
+    color: #fff !important;
+}
+.carousel-dark .carousel-caption h5{
+    font-size: 70px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 4rem;
+    height: 3rem;
+}
+.phoneSection{
+    padding: 15px 0;
+    background: #002b46;
+    color: #fff;
+    position: sticky;
+    top: 64px;
+}
+.phoneSection svg{
+    fill: #fff;
+    margin-right: 5px;
+}
+.phoneSection .bi-envelope-open{
+    margin-left: 20px;
+}
+.phoneSection .container{
+    display: flex;
+    justify-content: space-between;
+}
+.phoneSection .social-icons svg{
+    width: 24px;
+    height: 24px;
+}
+.phoneSection .social-icons svg:not(:last-child){
+    margin-right: 20px;
+}
+.formSection{
+    padding: 50px 0;
+    background: #f7f7f7;
+}
+.forms_style{
+    background: #4E8BCF;
+    padding: 30px 30px 45px;
+    border-radius: 3px;
+    color: #fff;
+}
+.forms_style p{
+    font-size: 40px;
+}
+.forms_style button{
+    background-color: #002b46;
+    color: #fff;
+    border: 1px solid #002b46;
+}
+.forms_style button:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  .flip-card img{
+      width: 100%;
+      height: 300px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: transparent;
+    transform: rotateY(180deg);
+    padding: 10px;
+    color: #2d2d2d;
+  }
+  .flip-card-back .flip-content{
+     position: absolute;
+     top: 50%;
+     transform: translate(0,-50%);
+  }
+  .expertise{
+      padding: 50px 0;
+  }
+  .heading{
+      width: 200px;
+      margin: auto;
+      font-size:30px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #4E8BCF;
+      margin-bottom: 50px;
+  }
